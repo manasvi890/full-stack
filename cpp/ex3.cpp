@@ -1,12 +1,12 @@
 #include <iostream>
-#include <string>
+
 using namespace std;
 
 class Flight
 {
 private:
     int FlightNumber;
-    string Destination;
+    char Destination[50];
     float Distance;
     float Fuel;
 
@@ -29,14 +29,15 @@ private:
 public:
     void FEEDINFO()
     {
+
+        cout << "Enter Destination: ";
+        gets(Destination);
+
         cout << "Enter Flight Number: ";
         cin >> FlightNumber;
 
         cout << "Enter Distance: ";
         cin >> Distance;
-
-        cout << "Enter Destination: ";
-        cin >> Destination;
 
         CALFUEL();
     }

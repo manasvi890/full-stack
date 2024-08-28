@@ -6,8 +6,7 @@ private:
     int adno;
     char name[20];
     float marks;
-    float average;
-    float sum = 0.0;
+
     float getavg();
 
 public:
@@ -26,6 +25,8 @@ public:
     }
     void displayinfo()
     {
+        float average;
+        average = getavg();
         cout << "---------------------" << endl;
         cout << "name :" << name << endl;
         cout << "adno :" << adno << endl;
@@ -36,6 +37,8 @@ public:
 
 float report ::getavg()
 {
+    float sum = 0.0;
+    float average;
     sum += marks;
     return average = marks / 5;
 };

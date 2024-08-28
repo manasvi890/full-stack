@@ -1,11 +1,11 @@
 #include <iostream>
-#include <string>
+
 using namespace std;
 class test
 {
 private:
     int tcode;
-    string desp;
+    char desp[20];
     int candidate;
     int center;
     void calcntr();
@@ -13,14 +13,15 @@ private:
 public:
     void schedule()
     {
+
+        cout << "enter description :";
+        gets(desp);
+
         cout << "enter test code :";
         cin >> tcode;
 
         cout << "enter candidate number :";
         cin >> candidate;
-
-        cout << "enter description :";
-        cin >> desp;
 
         calcntr();
     }
