@@ -42,7 +42,5 @@ int main()
     obj.setB();
     obj.product();
 
-   
-
     return 0;
 }
