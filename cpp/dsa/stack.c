@@ -13,7 +13,7 @@ void push()
     else
     {
         top = top + 1;
-     
+
         printf("enter record :");
         scanf("%d", &stack[top]);
     }
@@ -46,6 +46,9 @@ void pop()
         top = top - 1;
     }
 }
+
+
+
 
 int main()
 {
