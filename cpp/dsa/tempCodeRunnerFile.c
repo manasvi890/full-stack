@@ -1,1 +1,1 @@
- display();
+ // Free remaining nodes before exiting
