@@ -4,52 +4,104 @@ struct node
 {
     int data;
     struct node *next;
+    struct node *prev;
 };
 struct node *head = NULL;
-struct node *tail = NULL;
-
-void insert_end(int num)
+void insert_end(int val)
 {
+    struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
-    temp->data = num;
-    temp->next = head;
 
-    if (head == NULL && tail == NULL)
+    temp->data = val;
+    temp->next = NULL;
+    temp->prev = NULL;
+
+    if (head == NULL)
     {
         head = temp;
-        tail = temp;
         return;
     }
-    tail->next = temp;
-    tail = temp;
+    else
+    {
+        while (ptr->next != NULL)
+        {
+            ptr = ptr->next;
+        }
+        ptr->next = temp;
+        temp->prev = ptr;
+    }
 }
 void delete_end()
 {
-    struct node *ptr = tail;
-    struct node *p = head;
-    if (head == NULL)
+    struct node *ptr = head;
+    struct node *p;
+
+    if (head->next = NULL)
     {
-        printf("\n\nthe list is already empty");
-    }
-    if (head == tail)
-    {
-        head = tail = NULL;
+        head = NULL;
+        free(ptr);
         return;
     }
-    while (p->next != tail)
+    else
     {
-        p = p->next;
+        while (ptr->next != NULL)
+        {
+            p = ptr;
+            ptr = ptr->next;
+        }
+        p->next = NULL;
+        free(ptr);
     }
-    p->next = head;
-    tail = p;
-    free(ptr);
 }
-void insert_mid(int num, int pos)
+
+void insert_first(int val)
+{
+    struct node *ptr = head;
+    struct node *temp = malloc(sizeof(struct node));
+
+    temp->data = val;
+    temp->next = NULL;
+    temp->prev = NULL;
+
+    if (head == NULL)
+    {
+        head = temp;
+        return;
+    }
+    else
+    {
+        head = temp;
+        temp->next = ptr;
+        ptr->prev = temp;
+    }
+}
+
+void delete_first()
+{
+    struct node *ptr;
+
+    if (head->next == NULL)
+    {
+        head = NULL;
+        free(ptr);
+        return;
+    }
+    else
+    {
+        head = head->next;
+        head->prev = NULL;
+        free(ptr);
+    }
+}
+
+void insert_mid(int val, int pos)
 {
     struct node *ptr = head;
     struct node *p;
     struct node *temp = malloc(sizeof(struct node));
-    temp->data = num;
+    temp->data = val;
+    temp->next = NULL;
+    temp->prev = NULL;
 
     while (ptr->data != pos)
     {
@@ -57,56 +109,36 @@ void insert_mid(int num, int pos)
         ptr = ptr->next;
     }
     p->next = temp;
+    temp->prev = p;
     temp->next = ptr;
+    ptr->prev = temp;
 }
+
 void delete_mid(int pos)
 {
     struct node *ptr = head;
     struct node *p;
+
     while (ptr->data != pos)
     {
         p = ptr;
         ptr = ptr->next;
     }
     p->next = ptr->next;
+    ptr->next->prev = p;
     free(ptr);
 }
-void insert_first(int num)
-{
 
-    struct node *temp = malloc(sizeof(struct node));
-    temp->data = num;
-    temp->next = head;
-    head = temp;
-    tail->next = head;
-}
-void delete_first()
-{
-    if (head == NULL)
-    {
-        printf("\n\nthe list is already empty");
-    }
-    if (head == tail)
-    {
-        head = tail = NULL;
-        return;
-    }
-    struct node *ptr = head;
-    head = head->next;
-    tail->next = head;
-    free(ptr);
-}
 void display()
 {
     struct node *ptr = head;
-    printf("\n");
     if (head == NULL)
     {
-        printf("the list is already empty");
+        printf("list is already null");
     }
     else
     {
-        while (ptr != tail)
+        while (ptr != NULL)
         {
             printf("%d", ptr->data);
             ptr = ptr->next;
@@ -117,7 +149,7 @@ void display()
 }
 int main()
 {
-    int n, num, pos;
+    int n, val, pos;
 
     do
     {
@@ -137,8 +169,8 @@ int main()
         {
         case 1:
             printf("Enter element to insert at end: ");
-            scanf("%d", &num);
-            insert_end(num);
+            scanf("%d\t", &val);
+            insert_end(val);
             break;
 
         case 2:
@@ -147,10 +179,10 @@ int main()
 
         case 3:
             printf("Enter element to insert :");
-            scanf("%d", &num);
+            scanf("%d", &val);
             printf("enter position :");
             scanf("%d", &pos);
-            insert_mid(num, pos);
+            insert_mid(val, pos);
             break;
 
         case 4:
@@ -161,8 +193,8 @@ int main()
 
         case 5:
             printf("Enter element to insert at beginning: ");
-            scanf("%d", &num);
-            insert_first(num);
+            scanf("%d", &val);
+            insert_first(val);
             break;
 
         case 6:
