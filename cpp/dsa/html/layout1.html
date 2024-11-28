@@ -10,6 +10,8 @@
         tr {
             border: 1px solid black;
             text-align: center;
+            padding: 10px;
+            border-spacing: 10px;
 
         }
 
@@ -27,7 +29,7 @@
 <body>
     <table>
         <b>
-            <caption>NAVIGATION BAR</caption>
+            <caption style="border: 1px solid black; border-style: dotted;">NAVIGATION BAR</caption>
         </b>
         <thead>
             <th>INDEX LINK</th>
@@ -35,25 +37,58 @@
             <th>PREV LINK</th>
             <th>NEXT LINK</th>
         </thead>
+
         <tbody>
             <tr>
-                <td rowspan="3">VIDEO<br><video controls autoplay muted poster="./top-section-bg.jpeg" height="400"
-                        width="400">
+                <td rowspan="3" style="border-style: dashed;">VIDEO<br><video controls autoplay muted
+                        poster="./top-section-bg.jpeg" height="200" width="200">
+
                         <source src="video1.mp4" type="video/mp4">
                     </video></td>
-                <td colspan="3" rowspan="3"><img src="image1.jpg" height="400px" width="350px"></td>
-                
-               
+                <td rowspan="6" colspan="3"><img src="image1.jpg" height="400px" width="350px"></td>
+
             </tr>
             <tr>
 
-              
-              
+
             </tr>
             <tr>
 
-               
-                
+
+            </tr>
+            <tr>
+                <td rowspan="5" style="border-style: dashed;"><a href="#">Home</a><br>
+                    <a href="#">Menu</a><br>
+                    <a href="#">Contact us</a><br>
+                    <a href="#">About Us</a><br>
+                </td>
+
+            </tr>
+            <tr>
+
+
+            </tr>
+            <tr>
+
+
+            </tr>
+            <tr>
+
+                <td colspan="3"><audio controls>
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="audio1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio></td>
+
+            </tr>
+            <tr>
+
+                <td colspan="3">AUDIO CONTROLLER</td>
+
+            </tr>
+            <tr>
+                <td colspan="4">ADDITIONAL CONTROL LINKS</td>
+
             </tr>
         </tbody>
     </table>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>layout 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            border-spacing: 10px;
+            border-style: dotted;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+
+        }
+
+        tr,
+        th,
+        td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            background-color: rgb(240, 242, 246);
+            color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th colspan="6"> <img src="logo1.avif" alt="Logo" style="width:80px; height: 80px;" class="rounded-pill">
+            </th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#">home</a></td>
+                <td><a href="#">menu</a></td>
+                <td><a href="#">product</a></td>
+                <td><a href="#">services</a></td>
+                <td><a href="#">about</a></td>
+                <td><a href="#">contact</a></td>
+
+
+            </tr>
+            <TR>
+                <td colspan="6">Feature 1<br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed sapiente
+                        sit
+                        iusto a
+                        molestias cumque
+                        numquam reprehenderit, eos accusamus sint, exercitationem modi quisquam reiciendis! Placeat modi
+                        dolor sapiente mollitia doloribus!</p>
+                    <br>Feature 2<br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sit nihil dolore
+                        exercitationem
+                        libero dicta qui reprehenderit harum quaerat provident dignissimos architecto asperiores, eos
+                        magnam
+                        magni temporibus vitae eaque nostrum!</p>
+                </td>
+
+
+            </TR>
+            <tr>
+                <td colspan="2" rowspan="2">column 1<br><img src="image1.jpg" height="150px" width="200px"></td>
+
+
+                <td colspan="2" rowspan="2">column 2<br><img src="image1.jpg" height="150px" width="200px"></td>
+
+
+                <td colspan="2" rowspan="2">column 3<br><img src="image1.jpg" height="150px" width="200px"></td>
+
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">@copyright 2011</td>
+
+
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
