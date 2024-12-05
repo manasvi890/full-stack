@@ -5,13 +5,15 @@
     box-shadow: 0px 0px 10px black;
     padding: 10px;
     margin-top: 100px;
-    margin-left: 500px;
+    margin-left: 550px;
     margin-right: 500px;
     margin-bottom: 100px;
+    background-color: white;
 
     .box-header {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: center;
+
     }
 
     .box-content {
@@ -55,13 +57,86 @@
 
 .boxes {
     height: auto;
-    width: 500px;
+    width: 550px;
     border: 2px solid black;
     box-shadow: 0px 0px 10px black;
-    padding: 10px;
+    padding: 30px;
     margin-top: 100px;
-    margin-left: 500px;
+    margin-left: 450px;
     margin-right: 500px;
     margin-bottom: 100px;
     align-items: center;
+    background-color: white;
+
+
+
+    /* Start at the beginning of the parent class and never skip any element means count element continuously*/
+    /* h1:first-child {
+        background-color: green;
+        color: white;
+    } */
+
+    /* Start at the end of the parent class and never skip any element means count element continuously */
+    /* h1:last-child {
+        background-color: yellow;
+    } */
+
+    /*  Start at the beginning of the parent class and skip any element means does not count element which is not mentioned means count only those element which are described*/
+    h1:first-of-type {
+        background-color: rgb(233, 98, 121);
+        color: white;
+    }
+
+    /*  Start at the end of the parent class and skip any element means does not count element which is not mentioned means count only those element which are described*/
+    h1:last-of-type {
+        background-color: purple;
+        color: white;
+    }
+
+    /* Start at the beginning of the parent class and work on mentioned number element count other element which are not mentioned and also count direct child of parent */
+    h1:nth-child(3) {
+        background-color: orange;
+        color: white;
+    }
+
+    /* Start at the beginning of the parent class and work on mentioned number element count other element which are not mentioned and also count direct child of parent */
+    h1:nth-child(7) {
+        background-color: blue;
+        color: white;
+    }
+
+    /* Start at the end of the parent class and work on mentioned number element count other element which are not mentioned and also count direct child of parent */
+    h1:nth-last-child(10) {
+        background-color: rgb(150, 164, 165);
+        color: white;
+    }
+
+    /* Start at the beginning of the parent class skip other elements and count  direct child of parent */
+    h1:nth-of-type(5) {
+        background-color: red;
+        color: white;
+
+    }
+
+
+    /* Start at the end of the parent class skip other elements and count  direct child of parent */
+    h1:nth-last-of-type(7) {
+        background-color: rgb(78, 39, 40);
+        color: white;
+    }
+
+    p:first-of-type {
+        background-color: aquamarine;
+        font-size: 20px;
+    }
+}
+
+/* h3 css */
+
+h3 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(247, 248, 249) !important;
 }
