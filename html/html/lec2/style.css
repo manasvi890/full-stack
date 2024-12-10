@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(236, 228, 228) !important;
+}
+
+p {
+    background-color: purple;
+    color: white;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: tomato;
+}
+
+.division {
+    background-color: purple;
+}
+
+.section {
+    border: 10px solid white;
+}
+
+#inline {
+    background-color: blue;
+
+}
+
+
+/* Link Selector */
+
+a {
+    color: white !important;
+}
+
+a:link {
+    background-color: green;
+}
+
+a:active {
+    background-color: tomato;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+a:visited {
+    background-color: blueviolet;
+}
+
+/* Decendent Selector */
+
+div span {
+    height: 50px;
+    width: 400px;
+    display: inline-block;
+    background-color: rgb(213, 213, 241);
+    margin-top: 30px;
+}
+
+/* Child Selector */
+
+div>p {
+    border: 5px solid black;
+}
+
+/* Sibling Selector */
+
+section+p {
+    background-color: black;
+}
+
+div+p {
+    background-color: green;
+}
+
+/* General Sibling Selector */
+
+div~p {
+    background-color: green;
+}

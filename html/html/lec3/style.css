@@ -1,0 +1,338 @@
+.box {
+    height: 350px;
+    width: 350px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 550px;
+    margin-right: 500px;
+    margin-bottom: 100px;
+    background-color: white;
+
+    .box-header {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+
+    }
+
+    .box-content {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        background-color: gray;
+        color: white;
+
+
+    }
+
+}
+
+.button {
+
+    padding: 10px 110px;
+
+    button {
+        height: 40px;
+        width: 80px;
+
+
+        background-color: blue;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+        /* margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
+
+    }
+}
+
+/* Psudo Class Element  */
+
+.boxes {
+    height: auto;
+    width: 550px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    padding: 30px;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-right: 500px;
+    margin-bottom: 100px;
+    align-items: center;
+    background-color: white;
+
+
+
+    /* Start at the beginning of the parent class and never skip any element means count element continuously*/
+    /* h1:first-child {
+        background-color: green;
+        color: white;
+    } */
+
+    /* Start at the end of the parent class and never skip any element means count element continuously */
+    /* h1:last-child {
+        background-color: yellow;
+    } */
+
+    /*  Start at the beginning of the parent class and skip any element means does not count element which is not mentioned means count only those element which are described*/
+    h1:first-of-type {
+        background-color: rgb(233, 98, 121);
+        color: white;
+    }
+
+    /*  Start at the end of the parent class and skip any element means does not count element which is not mentioned means count only those element which are described*/
+    h1:last-of-type {
+        background-color: purple;
+        color: white;
+    }
+
+    /* Start at the beginning of the parent class and work on mentioned number element count other element which are not mentioned and also count direct child of parent */
+    h1:nth-child(3) {
+        background-color: orange;
+        color: white;
+    }
+
+    /* Start at the beginning of the parent class and work on mentioned number element count other element which are not mentioned and also count direct child of parent */
+    h1:nth-child(7) {
+        background-color: blue;
+        color: white;
+    }
+
+    /* Start at the end of the parent class and work on mentioned number element count other element which are not mentioned and also count direct child of parent */
+    h1:nth-last-child(10) {
+        background-color: rgb(52, 111, 115);
+        color: white;
+    }
+
+    /* Start at the beginning of the parent class skip other elements and count  direct child of parent */
+    h1:nth-of-type(5) {
+        background-color: red;
+        color: white;
+
+    }
+
+
+    /* Start at the end of the parent class skip other elements and count  direct child of parent */
+    h1:nth-last-of-type(7) {
+        background-color: rgb(78, 39, 40);
+        color: white;
+    }
+
+    p:first-of-type {
+        background-color: aquamarine;
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+/* h3 css */
+
+h3 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(247, 248, 249) !important;
+}
+
+.box-3 {
+    height: 1500px;
+    width: 550px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    padding: 30px;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-right: 500px;
+    margin-bottom: 100px;
+    align-items: center;
+    background-color: white;
+
+
+    /* select only those parent whose child in only one */
+    .demo:only-child {
+        background-color: rgb(202, 202, 237);
+    }
+
+    /* after */
+
+    pre:after {
+        content: "Hello World";
+    }
+
+
+    pre:before {
+        content: "Hello World";
+    }
+
+    /* 
+    pre::after{
+    content: '';
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    position: absolute;
+} */
+
+    p::first-line {
+        background-color: red;
+    }
+
+    p::selection {
+        background-color: yellow;
+        text-decoration: underline;
+    }
+
+    /* :read-only {
+        background-color: red;
+    } */
+
+    /* :read-write {
+        font-size: 25px;
+        background-color: green;
+    } */
+
+    input:valid {
+        background-color: green;
+    }
+
+    input:invalid {
+        background-color: red;
+    }
+
+    ::marker {
+        color: red
+    }
+
+    ol li {
+        color: red;
+    }
+
+    ::placeholder {
+        color: rgb(224, 244, 224);
+        text-decoration: overline;
+        text-decoration-thickness: 3px;
+        text-decoration-style: dashed;
+    }
+
+    p {
+        text-decoration: 2px solid red underline;
+    }
+
+    .color {
+        height: 100px;
+        width: 100px;
+
+        .RGB {
+            background-color: rgb(100, 150, 200);
+        }
+
+        .rgba {
+            background-color: rgba(255, 99, 71, 0.5);
+
+        }
+
+        .HEX {
+            background-color: #ffaa00;
+        }
+
+        .HSL {
+            background-color: hsl(450, 0%, 50%);
+        }
+    }
+
+    /* video::cue{
+    color:red;
+} */
+
+    /* Css Colors */
+
+    /*
+
+RGB
+RGBA
+HEX
+HSL
+CMYK
+
+
+*/
+
+    /* RGB */
+
+    /*
+
+RED:-  0 TO 255
+GREEN:- 0 TO 255
+BLUE:- 0 TO 255
+
+rgb(red , green , blue)
+rgb(56 , 0 , 100)
+
+
+*/
+
+    /* div{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(255 , 255 , 255);
+} */
+
+
+    /*
+
+RED:-  0 TO 255
+GREEN:- 0 TO 255
+BLUE:- 0 TO 255
+Parameter Alpha:- 0 to 1 (0.1 , 0.5 , 0.9)
+
+rgb(red , green , blue)
+rgb(56 , 0 , 100)
+
+
+*/
+
+    /* div{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(255 , 0 , 0 , 0);
+} */
+
+    /* HEX */
+
+    /*
+#ff-00
+
+RED:-  0 TO ff
+GREEN:- 0 TO ff
+BLUE:- 0 TO ff
+
+
+*/
+
+    /* https://htmlcolorcodes.com/ */
+
+    /* div{
+    height: 400px;
+    width: 400px;
+    background-color: #ffaa00;
+} */
+
+    /* HSL */
+
+    /* div{
+    height: 400px;
+    width: 400px;
+    background-color: hsl(450 , 0%  , 50%);
+} */
+}
