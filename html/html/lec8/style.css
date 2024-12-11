@@ -1,0 +1,71 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+div {
+    margin: 20px;
+}
+
+.button1 {
+    background-color: #FF99FF;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px solid #FF66FF;
+    outline: 5px solid #FF00FF;
+    outline-offset: 2px;
+    /* border-top:5px solid rgb(250, 62, 250);
+    border-bottom:5px solid rgb(250, 62, 250);
+    border-left:5px solid rgb(250, 62, 250);
+    border-right:5px solid rgb(250, 62, 250);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(250, 62, 250);
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: rgb(255, 112, 255); */
+}
+
+.button1:hover {
+    background-color: rgb(178, 1, 178);
+    border: 5px solid rgb(223, 42, 223);
+    background-color: white;
+    color: black
+}
+
+.button2 {
+    background-color: #666666;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px dotted #660066;
+    outline: 5px dotted #663366;
+    outline-offset: 2px;
+}
+
+.button3 {
+    background-color: #6d0d0d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px dashed rgb(70, 2, 2);
+    outline: 5px dashed rgb(24, 1, 1);
+    outline-offset: 2px;
+}
+
+.button4 {
+    background-color: #6d0d0d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px dashed rgb(70, 2, 2);
+    outline: 5px dashed rgb(24, 1, 1);
+    outline-offset: 2px;
+}

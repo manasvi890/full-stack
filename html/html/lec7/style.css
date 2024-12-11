@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&family=Yuji+Mai&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&family=Yuji+Mai&display=swap'); */
 
 /* Universal Selector */
 * {
@@ -8,11 +8,11 @@
 }
 
 p {
-    font-family: "Yuji Mai", serif;
+    font-family: "Space Mono", monospace;
 }
 
 .back-image {
-    height: 500px;
+    height: 200px;
     width: auto;
     background-image: url('https://freefrontend.com/assets/img/css-background-patterns/Background-Triangle-Pattern-HTML-CSS.png');
     font-size: 100px;
@@ -56,29 +56,56 @@ p {
 
 }
 
-.div1 {
-    height: 200px;
-    width: 200px;
+.box-container {
+    height: 250px;
+    width: 1000px;
     border: 1px solid black;
     font-size: 30px;
     font-weight: bold;
-    /* margin-left: auto; */
-}
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: azure;
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(12, 12, 12);
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
 
-.div-1 {
-    /* margin:20px;
-    margin: 20px 40px;
-    margin: 20px 40px 60px;
-    margin: 20px 40px 60px 80px;
-    margin-top:50px;
-    margin-bottom: 100px; */
-    /* margin-block:40px;
-    margin-inline:60px; */
-    /* margin-left: -100px; */
-    /* padding: 20px;
-    padding: 20px 40px;
-    padding: 20px 30px 40px;
-    padding: 20px 30px 40px 50px;
-    padding: 0 20px 10px; */
-    /* padding: -20px; */
+    /* margin-left: auto; */
+
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        margin: 20px;
+        margin: 20px 40px;
+        margin: 20px 40px 60px;
+        margin: 20px 40px 60px 80px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        margin-block: 40px;
+        margin-inline: 60px;
+        /* margin-left: -100px; */
+        padding: 20px;
+        padding: 20px 40px;
+        padding: 20px 30px 40px;
+        padding: 20px 30px 40px 50px;
+        padding: 0 20px 10px;
+        padding: -20px;
+        background-color: rgb(152, 14, 152);
+        box-shadow: 5px 5px 10px azure;
+    }
+
+    .box2 {
+        background-color: rgb(248, 46, 80);
+    }
+
+    .box3 {
+        background-color: rgb(9, 99, 117);
+    }
+
+    .box4 {
+        background-color: rgb(189, 146, 5);
+    }
 }
