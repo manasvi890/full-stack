@@ -14,12 +14,12 @@ div {
 }
 
 .button1 {
-    background-color: #FF99FF;
+    background-color: #6d0d0d;
     padding: 10px 20px;
     color: white;
     font-weight: bold;
-    border: 5px solid #FF66FF;
-    outline: 5px solid #FF00FF;
+    border: 5px solid rgb(70, 2, 2);
+    outline: 5px solid rgb(24, 1, 1);
     outline-offset: 2px;
     /* border-top:5px solid rgb(250, 62, 250);
     border-bottom:5px solid rgb(250, 62, 250);
@@ -34,19 +34,20 @@ div {
 }
 
 .button1:hover {
-    background-color: rgb(178, 1, 178);
-    border: 5px solid rgb(223, 42, 223);
-    background-color: white;
-    color: black
+    background-color: #f7eaea;
+    border: 5px solid rgb(70, 2, 2);
+
+    color: rgb(14, 13, 13);
+    outline: 5px solid rgb(24, 1, 1);
 }
 
 .button2 {
-    background-color: #666666;
+    background-color: #6d0d0d;
     padding: 10px 20px;
     color: white;
     font-weight: bold;
-    border: 5px dotted #660066;
-    outline: 5px dotted #663366;
+    border: 5px dotted rgb(70, 2, 2);
+    outline: 5px dotted rgb(24, 1, 1);
     outline-offset: 2px;
 }
 
@@ -65,7 +66,69 @@ div {
     padding: 10px 20px;
     color: white;
     font-weight: bold;
-    border: 5px dashed rgb(70, 2, 2);
-    outline: 5px dashed rgb(24, 1, 1);
+    border: 5px ridge rgb(70, 2, 2);
+    outline: 5px ridge rgb(24, 1, 1);
+    outline-offset: 2px;
+}
+
+.button5 {
+    background-color: #6d0d0d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px inset rgb(70, 2, 2);
+    outline: 5px inset rgb(24, 1, 1);
+    outline-offset: 2px;
+}
+
+.button6 {
+    background-color: #6d0d0d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px outset rgb(70, 2, 2);
+    outline: 5px outset rgb(24, 1, 1);
+    outline-offset: 2px;
+}
+
+.button7 {
+    background-color: #6d0d0d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    /* border: 5px inset rgb(70, 2, 2); */
+    border: 5px solid rgb(254, 246, 254);
+    border-left: hidden;
+    outline: 5px inset rgb(24, 1, 1);
+    outline-offset: 2px;
+}
+
+.button8 {
+    background-color: #6d0d0d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px inset rgb(70, 2, 2);
+    outline: 5px inset rgb(24, 1, 1);
+    outline-offset: 2px;
+}
+
+.button9 {
+    background-color: #6d0d0d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px double rgb(70, 2, 2);
+    outline: 5px double rgb(24, 1, 1);
+    outline-offset: 2px;
+}
+
+.button10 {
+    background-color: #6d0d0d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px groove rgb(70, 2, 2);
+    outline: 5px groove rgb(24, 1, 1);
     outline-offset: 2px;
 }
