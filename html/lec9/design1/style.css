@@ -5,23 +5,21 @@
 }
 
 .image {
-    min-height: 500px;
-    width: auto;
+    height: 500px;
+    width: 500px;
     margin: 20px;
-
 }
 
 .img {
-    height: auto;
-    width: 100%;
+    height: inherit;
+    width: inherit;
 }
 
 .text {
-    max-height: 500px;
-    width: auto;
+    height: 500px;
+    width: 500px;
     border: 2px solid black;
     margin: 20px;
     padding: 10px;
     text-align: justify;
-
 }

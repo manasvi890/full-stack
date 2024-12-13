@@ -5,7 +5,7 @@
 }
 
 .image {
-    max-height: 500px;
+    min-height: 500px;
     width: auto;
     margin: 20px;
 }
@@ -16,10 +16,11 @@
 }
 
 .text {
-    max-height: 500px;
+    min-height: 500px;
     width: auto;
     border: 2px solid black;
     margin: 20px;
     padding: 10px;
     text-align: justify;
+    font-size: 50px;
 }
