@@ -1,0 +1,25 @@
+/* CSS Height / Width / Max-height / Max-width / Min-height / Min-width */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.image {
+    height: auto;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    height: auto;
+    max-width: 500px;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    text-align: justify;
+}
