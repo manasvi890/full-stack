@@ -1,0 +1,120 @@
+/* Object-Fit Properties */
+* {
+    padding: 10px 10px 20px 10px;
+
+}
+
+.image-1 {
+    height: 500px;
+    width: 500px;
+    display: flex;
+}
+
+.img-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* object-fit: scale-down;
+    object-fit: fill;
+    object-fit: cover;
+    object-position: center;
+    object-position: 10% 100%; */
+}
+
+.image-2 {
+    height: 500px;
+    width: 500px;
+    display: flex;
+}
+
+.img-2 {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    object-fit: scale-down;
+    /* object-fit: fill;
+    object-fit: cover;
+    object-position: center;
+    object-position: 10% 100%; */
+}
+
+.image-3 {
+    height: 500px;
+    width: 500px;
+}
+
+.img-3 {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain;
+    object-fit: scale-down; */
+    object-fit: fill;
+    /* object-fit: cover;
+    object-position: center;
+    object-position: 10% 100%; */
+}
+
+.image-4 {
+    height: 500px;
+    width: 500px;
+}
+
+.img-4 {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain;
+    object-fit: scale-down;
+    object-fit: fill; */
+    object-fit: cover;
+    /* object-position: center;
+    object-position: 10% 100%; */
+}
+
+.image-5 {
+    height: 500px;
+    width: 500px;
+}
+
+.img-5 {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain;
+    object-fit: scale-down;
+    object-fit: fill;
+    object-fit: cover; */
+    object-position: center;
+    /* object-position: 10% 100%; */
+}
+
+.image-6 {
+    height: 500px;
+    width: 500px;
+}
+
+.img-6 {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain;
+    object-fit: scale-down;
+    object-fit: fill;
+    object-fit: cover;
+    object-position: center; */
+    object-position: 10px 100%;
+}
+
+.box {
+    border: 1px solid black;
+    height: auto;
+    width: 550px;
+    margin: auto;
+    box-shadow: 5px 5px 30px rgb(14, 17, 17);
+    margin: 20px auto;
+    background-color: rgb(249, 249, 245);
+    border-radius: 20px;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: rgb(236, 6, 6);
+}

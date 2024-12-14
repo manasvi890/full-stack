@@ -9,12 +9,14 @@ clear :-  right , left , both , none
     float: inline-end;
     /* or */
     /* float: right; */
+
 }
 
 .para-1 {
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
     /* clear: both; */
+
 }
 
 .img-2 {

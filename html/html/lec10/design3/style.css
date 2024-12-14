@@ -7,8 +7,7 @@ clear :-  right , left , both , none
     width: 500px;
     height: auto;
     float: none;
-    /* or */
-    /* float: right; */
+   
 }
 
 .para-1 {

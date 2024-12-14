@@ -1,0 +1,74 @@
+/* Css Float Properties */
+/*
+float :-  inline-start  , inline-end , left , right , none
+clear :-  right , left , both , none
+*/
+.img-1 {
+    width: 500px;
+    height: auto;
+    /* float: inline-end; */
+    /* or */
+    float: right;
+}
+
+.para-1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    clear: right;
+}
+
+/* float inline-end or right then clear right */
+.img-2 {
+    float: left;
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.para-2 {
+    font-family: 'Courier New', Courier, monospace;
+    clear: left;
+}
+
+/* float inline-start or left then clear left */
+
+/* Object-Fit Properties */
+.image {
+    height: 500px;
+    width: 500px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* object-fit: scale-down;
+    object-fit: fill;
+    object-fit: cover; */
+    object-position: center;
+    /* object-position: 10% 100%; */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(251, 6, 6);
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(251, 6, 6);
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+}
