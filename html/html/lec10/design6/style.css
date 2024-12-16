@@ -103,14 +103,14 @@
 }
 
 .box {
-    border: 1px solid black;
+    border: 1px solid transparent;
     height: auto;
     width: 550px;
     margin: auto;
     box-shadow: 5px 5px 30px rgb(14, 17, 17);
     margin: 20px auto;
-    background-color: rgb(249, 249, 245);
-    border-radius: 20px;
+    background-color: rgb(247, 247, 224);
+    border-radius: 40px;
 }
 
 h2 {
@@ -118,3 +118,8 @@ h2 {
     text-align: center;
     color: rgb(236, 6, 6);
 }
+/* 
+body {
+    background-image: url(./images/dominik.jpg);
+
+} */
