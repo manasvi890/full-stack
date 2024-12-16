@@ -1,7 +1,7 @@
 /* Object-Fit Properties */
 * {
     padding: 10px 10px 20px 10px;
-
+    /* display: flex; */
 }
 
 .image-1 {
@@ -118,6 +118,7 @@ h2 {
     text-align: center;
     color: rgb(236, 6, 6);
 }
+
 /* 
 body {
     background-image: url(./images/dominik.jpg);
