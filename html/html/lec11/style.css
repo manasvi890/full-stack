@@ -232,7 +232,7 @@ flex:grow , shrink , basis
 
     div:nth-child(1) {
         background-color: rgb(117, 108, 108);
-
+        display: flex;
     }
 
     div:nth-child(2) {
