@@ -1,0 +1,73 @@
+/* CSS flex box properties */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+}
+
+.maindiv {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    div {
+
+        flex: 0 1 400px;
+        /* color: white; */
+        text-align: center;
+        padding: 80px 50px;
+        font-weight: 400;
+
+        span i {
+            font-size: 30px;
+        }
+
+        h2 {
+            margin: 20px 0px;
+            font-weight: 600;
+        }
+    }
+
+}
+
+
+
+.box-1,
+.box-3 {
+    background-color: rgb(13, 13, 13);
+    border: 1px solid black;
+    color: white;
+}
+
+.box-2 {
+    background-color: #cee002;
+}
+
+@media (max-width:1200px) {
+    .box-3 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:800px) {
+    .box-2 {
+        margin-top: 20px;
+    }
+}
+
+h1 {
+   
+        font-size: 40px;
+        margin: 20px 0;
+text-align: center;
+        span {
+            display: block;
+        }
+    
+}
