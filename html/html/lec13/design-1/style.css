@@ -1,0 +1,47 @@
+/* Css Flex-Container Properties */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.maincontent {
+    display: flex;
+    width: 1500px;
+    height: 700px;
+    margin-inline: auto;
+    border: 1px solid black;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    div {
+        height: 150px;
+        width: 150px;
+        color: white;
+        font-size: 30px;
+    }
+
+    div:nth-child(1) {
+        background-color: blue;
+    }
+
+    div:nth-child(2) {
+        background-color: green;
+    }
+
+    div:nth-child(3) {
+        background-color: orange;
+    }
+
+    div:nth-child(4) {
+        background-color: purple;
+    }
+}
