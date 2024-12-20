@@ -1,0 +1,85 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+
+
+    .box-1,
+    .box-2,
+    .box-3 {
+        height: initial;
+        width: auto;
+        margin: 10px;
+        justify-content: space-between;
+        border: 1px solid transparent;
+        padding: 20px 30px;
+        flex: 1 0 200px;
+        background-color: aqua;
+
+    }
+
+    .button {
+        display: flex;
+        flex-wrap: wrap;
+
+        .button1,
+        .button2,
+        .button3,
+        .button4 {
+            border: 1px solid transparent;
+            padding: 5px 20px;
+            margin: 5px;
+            /* display: block; */
+            background-color: rgb(241, 246, 249);
+            width: 80px;
+            flex: 1 0 80px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px black;
+        }
+
+
+
+
+    }
+
+    .button5 {
+        border: 1px solid transparent;
+        padding: 5px;
+        margin: 5px;
+        /* display: block; */
+        background-color: rgb(241, 246, 249);
+        border-radius: 5px;
+        text-align: center;
+        width: 505px;
+        box-shadow: 1px 1px 5px black;
+    }
+
+
+}
+
+.head {
+    height: auto;
+    width: auto;
+    display: block;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 20px 30px;
+    /* margin: 10px; */
+    text-align: center;
+    background-color: purple;
+    color: white;
+    flex-wrap: wrap;
+}
+
+h2 {
+    margin: 20px 0;
+    font-weight: 600;
+}
