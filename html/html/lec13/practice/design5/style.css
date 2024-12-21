@@ -6,19 +6,19 @@
 
 .container {
     height: 100%;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
 
     .box {
         height: initial;
-        width: auto;
+        width: 100px;
         margin: 5px;
         justify-content: space-between;
         border: 1px solid transparent;
         padding: 20px 30px;
-        flex: 1 0 300px;
+        flex: 1 0 100px;
         background-color: aqua;
         /* .box-1 { 
             flex: 200px; 

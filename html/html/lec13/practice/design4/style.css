@@ -18,7 +18,7 @@
         justify-content: space-between;
         border: 1px solid transparent;
         padding: 20px 30px;
-        flex: 1 0 300px;
+        /* flex: 1 0; */
         background-color: aqua;
         /* .box-1 { 
             flex: 200px; 
