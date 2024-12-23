@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.box-1 {
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+    border: 1px solid none;
+    box-shadow: 10px 10px 30px rgb(243, 220, 228) inset, 10px 10px 10px rgb(248, 208, 221);
+    margin: 100px 100px;
+
+}
+
+.box-1:hover {
+    transform: translate(100px, 100px);
+    transform: translate(100px);
+    transform: translateY(100px);
+    transform: translate(-100px);
+    transform: translateY(-100px);
+
+    transition: 5s;
+}
+
+.box-2 {
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+    border: 1px solid none;
+    box-shadow: 10px 10px 30px rgb(243, 220, 228) inset, 10px 10px 10px rgb(248, 208, 221);
+    margin: 500px 500px;
+
+}
+
+.box-2:hover {
+    transform: scale(2);
+    transform: scale(-2);
+    transform: scaleY(2);
+    transform: scaleX(2);
+    transform: scale(0.5);
+
+
+    transition: 5s;
+}
+
+.box-3 {
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+    border: 1px solid none;
+    box-shadow: 10px 10px 30px rgb(243, 220, 228) inset, 10px 10px 10px rgb(248, 208, 221);
+    margin: 500px 500px;
+
+}
+
+.box-3:hover {
+    transform: rotate(90deg);
+    transform: rotate(-90deg);
+    transform: rotateX(90deg);
+    transform: rotateY(90deg);
+
+
+    transition: 5s;
+}
+
+.box-4 {
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+    border: 1px solid none;
+    box-shadow: 10px 10px 30px rgb(243, 220, 228) inset, 10px 10px 10px rgb(248, 208, 221);
+    margin: 500px 500px;
+
+}
+
+.box-4:hover {
+    transform: skew(50deg, 50deg);
+    transform: skewX(50deg);
+    transform: skewX(-50deg);
+    transform: skewY(50deg);
+    transform: skewY(-50deg);
+
+
+
+    transition: 5s;
+}
+
+/* https://polypane.app/css-3d-transform-examples/ */
+
+/* Css 3D */
+
+.box-5 {
+    height: 200px;
+    width: 200px;
+    margin: 500px 500px;
+    text-align: center;
+    color: rgb(218, 218, 246);
+    box-shadow:
+        rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+        rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color:
+        rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+}
+
+.box-5:hover {
+    transform:
+        perspective(50em) rotateX(18deg);
+}
+
+.box-6 {
+    height: 200px;
+    width: 200px;
+    margin: 500px 500px;
+    text-align: center;
+    color: rgb(218, 218, 246);
+    transform: perspective(1500px) rotateY(15deg);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: transform 1s ease 0s;
+
+}
+
+
+.box-6:hover {
+    transform: perspective(3000px) rotateY(5deg);
+}
