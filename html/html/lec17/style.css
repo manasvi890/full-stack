@@ -78,7 +78,7 @@
     }
 
     50% {
-        transform: translate(500px, 400px) rotate(1440deg);
+        transform: translate(500px, 500px) rotate(1440deg);
     }
 
     60% {
