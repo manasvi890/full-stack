@@ -6,18 +6,18 @@
 
 
 
-/* .maindiv {
+.maindiv {
     height: auto;
     width: auto;
-} */
+}
 
 .pitch {
     height: 10px;
     width: auto;
     background-color: green;
     border: 1px solid rgb(2, 59, 2);
-    margin-top: 500px;
-    margin-bottom: 500px;
+    /* margin-top: 500px; */
+    /* margin-bottom: 500px; */
 }
 
 .bounce-ball {
@@ -25,30 +25,57 @@
     width: 100px;
     border-radius: 100%;
     background-color: brown;
-    border: 1px solid black;
+    border: 1px solid rgb(252, 249, 249);
     margin: 8px;
     animation-name: running-ball;
     animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    .line {
+        height: 2px;
+        width: 100px;
+        background-color: rgb(254, 253, 253);
+        margin-top: 50px;
+    }
 }
 
+
+
+/* 
 .square {
     height: 50px;
     width: 50px;
     background-color: blue;
     margin: 25px;
+} */
+
+.stamp {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
 }
 
-/* .stamp {
+.stamp-1 {
+    height: 300px;
+    width: 10px;
+    background-color: black;
+}
 
-    .stamp-1,
-    .stamp-2,
-    .stamp-3 {
-        height: 50px;
-        width: 10px;
-        background-color: black;
-        margin: 5px;
-    }
-} */
+.stamp-2 {
+    height: 300px;
+    width: 10px;
+    background-color: black;
+    animation-name: stamp-2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.stamp-3 {
+    height: 300px;
+    width: 10px;
+    background-color: black;
+}
+
 
 /* .maindiv:hover .bounce-ball {
 
@@ -57,47 +84,59 @@
 
 @keyframes running-ball {
     0% {
-        transform: translate(0px) rotate(1440deg);
+        transform: translate(0px);
     }
 
     10% {
-        transform: translate(10px) rotate(1440deg);
+        transform: translate(300px, 300px);
     }
 
     20% {
-        transform: translate(20px) rotate(1440deg);
+        transform: translate(700px, 110px);
     }
 
-
     30% {
-        transform: translate(30px) rotate(1440deg);
+        transform: translate(900px, 300px);
     }
 
     40% {
-        transform: translate(40px) rotate(1440deg);
-    }
-
-    50% {
-        transform: translate(500px, 500px) rotate(1440deg);
-    }
-
-    60% {
-        transform: translateY(100px, 200px) rotate(1440deg);
-    }
-
-    70% {
-        transform: translate(700px);
-    }
-
-    80% {   
-        transform: translate(800px);
+        transform: translate(1200px, 300px);
     }
 
     90% {
-        transform: translate(900px);
+        transform: translate(1500px);
+    }
+}
+
+@keyframes stamp-2 {
+    0% {
+        background-color: black;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        background-color: black;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        background-color: black;
+        transform: rotate(0deg);
+    }
+
+    30% {
+        background-color: black;
+        transform: rotate(0deg);
+    }
+
+    40% {
+        background-color: black;
+        transform: rotate(0deg);
     }
 
     100% {
-        transform: translate(1000px);
+        background-color: red;
+        box-shadow: 5px 5px 10px black;
+        transform: translateX(10px);
     }
 }
