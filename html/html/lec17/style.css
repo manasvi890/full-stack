@@ -30,6 +30,8 @@
     animation-name: running-ball;
     animation-duration: 5s;
     animation-iteration-count: 1;
+    transition-timing-function: linear;
+    transform: rotate(1440deg);
 
     .line {
         height: 2px;
@@ -104,7 +106,7 @@
     }
 
     90% {
-        transform: translate(1500px);
+        transform: translate(1500px, 300px) rotate(1000deg);
     }
 }
 
