@@ -1,0 +1,19 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.maindiv div {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
