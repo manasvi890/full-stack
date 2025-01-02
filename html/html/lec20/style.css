@@ -9,7 +9,9 @@
     background-color: rgb(221, 217, 178);
     display: flex;
     margin: auto;
+    margin-top: 20px;
     position: relative;
+    border: 1px solid black;
 
     div {
         height: 100px;
