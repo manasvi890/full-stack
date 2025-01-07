@@ -22,8 +22,10 @@ a {
 /* navbar start */
 
 .container {
-    width: calc(100% - 20%);
+    width: calc(100% - 5%);
     margin: auto;
+    /* padding: 0 20px; */
+
 }
 
 .navigation {
@@ -33,7 +35,7 @@ a {
     align-items: center;
 
     nav a {
-        padding: 20px 30px;
+        padding: 15px 25px;
         color: black;
         font-weight: 500;
         font-size: 16px;
@@ -47,12 +49,16 @@ a {
 
     .nav-logo {
         display: flex;
-        padding: 2%;
+        padding: 1.6%;
+        padding-left: 100px;
+        padding-right: 300px;
     }
 
+
     /* 
+    
     nav a:nth-child(1) {
-        padding-left: 200px;
+        padding-left: 300px;
     } */
 
     nav a:nth-child(5) {
@@ -63,8 +69,8 @@ a {
         /* padding: 18px 30px; */
     }
 
-    .nav-menu span i {
-        font-size: 20px;
+    .nav-menu i {
+        font-size: 30px;
     }
 
     nav a:nth-child(5):hover {
@@ -112,7 +118,7 @@ a {
 
 /* hero section start */
 .container2 {
-    width: calc(100% - 20%);
+    width: calc(100% - 10%);
     margin: auto;
 }
 
@@ -129,7 +135,7 @@ a {
     .hero-img {
         img {
             /* padding-top: 100px; */
-            max-width: 100%;
+            max-width: 85%;
             height: auto;
         }
     }
@@ -141,11 +147,11 @@ a {
         h1 {
             color: #db6260;
             font-size: 60px;
-            /* font-weight: 600; */
+            font-weight: 600;
             /* text-align: left; */
             letter-spacing: -3px;
             font-family: "Montserrat", serif;
-         
+
         }
 
         p {
