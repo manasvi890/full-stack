@@ -22,7 +22,7 @@ a {
 /* navbar start */
 
 .container {
-    width: calc(100% - 5%);
+    width: calc(100% - 10%);
     margin: auto;
     /* padding: 0 20px; */
 
@@ -50,8 +50,8 @@ a {
     .nav-logo {
         display: flex;
         padding: 1.6%;
-        padding-left: 100px;
-        padding-right: 300px;
+        padding-left: 50px;
+        padding-right: 200px;
     }
 
 
@@ -118,7 +118,7 @@ a {
 
 /* hero section start */
 .container2 {
-    width: calc(100% - 10%);
+    width: calc(100% - 20%);
     margin: auto;
 }
 
@@ -134,19 +134,18 @@ a {
 
     .hero-img {
         img {
-            /* padding-top: 100px; */
-            max-width: 85%;
+            width: calc(100% - 2%);
             height: auto;
         }
     }
 
     .hero-heading {
         display: block;
-        padding-top: 150px;
+        padding-top: 100px;
 
         h1 {
             color: #db6260;
-            font-size: 60px;
+            font-size: calc(4vw + 2px);
             font-weight: 600;
             /* text-align: left; */
             letter-spacing: -3px;
@@ -157,13 +156,39 @@ a {
         p {
             font-family: "Roboto", serif;
             font-size: 18px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            letter-spacing: 0.5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
             line-height: 26px;
             color: black;
         }
 
+        .btn-video {
+            height: 30px;
+            width: 30px;
+            border: 1px solid black;
+            border-radius: 100%;
+            background-color: transparent;
+            margin: 10px;
+            margin-left: 0;
+        }
+
     }
+
+}
+
+/* hero section end */
+
+/* facilities section start */
+
+.container-facility {
+    max-width: calc(100% - 15%);
+    margin: auto;
+}
+
+.facilities {
+    display: flex;
+    height: auto;
+    width: 100%;
 
 }
