@@ -241,6 +241,6 @@ a {
 .contant-3,
 .contant-4 {
     margin: auto;
-    align-items: center;
+    /* align-items: center; */
     text-align: justify;
 }
