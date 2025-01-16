@@ -99,6 +99,81 @@
             margin-left: 0;
         }
     }
+
+    /* hero section end */
+
+    /* facilities section start */
+    .section-3 {
+        margin: auto;
+        width: calc(100% - 5%);
+    }
+
+    .facilities {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        h4 {
+            font-family: "Roboto", serif;
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+            color: #db6260;
+            font-weight: 400;
+            margin: 10px;
+
+        }
+
+        p {
+            font-size: 16px;
+            font-family: "Roboto", serif;
+            text-align: left;
+            letter-spacing: 0.5px;
+            line-height: 26px;
+            color: #2b2b2b;
+            margin: 10px;
+            font-weight: 450;
+        }
+
+        .box-2 {
+
+            object-fit: cover;
+            max-width: 300px;
+            /* Limit the image container's width */
+            height: 300px;
+            /* Set a height for uniformity */
+            overflow: hidden;
+        }
+
+        .box-2 img {
+            width: 100%;
+            /* Ensure images scale to their container */
+            height: auto;
+            /* Maintain aspect ratio */
+            object-fit: cover;
+            /* Ensure the image fills the container without stretching */
+            max-width: 100%;
+        }
+
+        .box-1,
+        .box-2,
+        .box-3 {
+            margin: 20px;
+            flex: 1;
+            min-width: 250px;
+
+        }
+    }
+
+    .contant-1,
+    .contant-2,
+    .contant-3,
+    .contant-4 {
+        margin-top: 50px;
+        width: calc(100% - 5%);
+    }
 }
 
 
@@ -190,6 +265,81 @@
                 }
             }
         }
+    }
+
+    /* facilities section */
+
+    .section-3 {
+        width: calc(100% - 15%);
+        margin: auto;
+    }
+
+    .facilities {
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        h4 {
+            font-family: "Roboto", serif;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+            color: #db6260;
+            font-weight: 400;
+            margin: 10px;
+
+        }
+
+        p {
+            font-size: 18px;
+            font-family: "Roboto", serif;
+            text-align: center;
+            letter-spacing: 0.5px;
+            line-height: 26px;
+            color: #2b2b2b;
+            margin: 10px;
+            font-weight: 450;
+        }
+
+        .box-2 {
+
+            object-fit: cover;
+            max-width: 400px;
+            /* Limit the image container's width */
+            height: 300px;
+            /* Set a height for uniformity */
+            overflow: hidden;
+           
+        }
+
+        .box-2 img {
+            width: 100%;
+            /* Ensure images scale to their container */
+            height: auto;
+            /* Maintain aspect ratio */
+            object-fit: cover;
+            /* Ensure the image fills the container without stretching */
+            max-width: 100%;
+          align-items: center;
+        }
+
+        .box-1,
+        .box-2,
+        .box-3 {
+            margin: 20px;
+            flex: 1;
+            min-width: 250px;
+
+        }
+    }
+
+    .contant-1,
+    .contant-2,
+    .contant-3,
+    .contant-4 {
+        margin-top: 50px;
+        width: calc(100% - 5%);
     }
 }
 
