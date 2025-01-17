@@ -292,7 +292,7 @@
         }
 
         p {
-            font-size: 18px;
+            font-size: 16px;
             font-family: "Roboto", serif;
             text-align: center;
             letter-spacing: 0.5px;
@@ -300,28 +300,24 @@
             color: #2b2b2b;
             margin: 10px;
             font-weight: 450;
+
         }
 
         .box-2 {
 
             object-fit: cover;
             max-width: 400px;
-            /* Limit the image container's width */
-            height: 300px;
-            /* Set a height for uniformity */
+            height: auto;
             overflow: hidden;
-           
+
         }
 
         .box-2 img {
             width: 100%;
-            /* Ensure images scale to their container */
             height: auto;
-            /* Maintain aspect ratio */
             object-fit: cover;
-            /* Ensure the image fills the container without stretching */
             max-width: 100%;
-          align-items: center;
+            margin: auto;
         }
 
         .box-1,
@@ -340,6 +336,8 @@
     .contant-4 {
         margin-top: 50px;
         width: calc(100% - 5%);
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
