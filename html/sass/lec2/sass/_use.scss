@@ -1,0 +1,13 @@
+@import '_import.scss';
+
+.box-2 {
+    height: $h2;
+    width: $h3;
+    background-color: $bg-2;
+    color: $color-4;
+    font-size: $f4;
+
+    @at-root .child-2 {
+        background-color: $bg-3;
+    }
+}

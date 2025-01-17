@@ -1,0 +1,25 @@
+.box-2 {
+  height: 300px;
+  width: 400px;
+  background-color: pink;
+  color: white;
+  font-size: 28px;
+}
+.child-2 {
+  background-color: purple;
+}
+
+/* @import rule */
+/* @use rule */
+/* Nested Scss */
+/* @at-root rule */
+.box-1 {
+  height: 400px;
+  width: 500px;
+  background-color: purple;
+  color: pink;
+  font-size: 18px;
+}
+.box-1 .child-1 {
+  background-color: maroon;
+}/*# sourceMappingURL=main.css.map */

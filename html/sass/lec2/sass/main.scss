@@ -1,0 +1,18 @@
+@use 'use.scss';
+@import '_import.scss';
+/* @import rule */
+/* @use rule */
+/* Nested Scss */
+/* @at-root rule */
+
+.box-1 {
+    height: $h3;
+    width: $h4;
+    background-color: $bg-3;
+    color: $color-2;
+    font-size: $f2;
+
+    .child-1 {
+        background-color: $bg-1;
+    }
+}
