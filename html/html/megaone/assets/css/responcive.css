@@ -23,9 +23,16 @@
 
     .navigation {
         display: flex;
-        justify-content: space-between;
-        height: 100%;
+        margin: auto;
+        justify-content: space-around;
+        width: 100%;
+        background-color: #ffffff;
         align-items: center;
+        z-index: 111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 5px 0px 10px black;
 
         nav a {
             padding: 20px 15px;
@@ -170,9 +177,13 @@
     .contant-1,
     .contant-2,
     .contant-3,
-    .contant-4 {
+    .contant-4 i {
         margin-top: 50px;
         width: calc(100% - 5%);
+        font-size: 30px;
+        text-align: left;
+        line-height: 30px;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -182,9 +193,16 @@
 
     .navigation {
         display: flex;
-        justify-content: space-between;
-        height: 100%;
+        margin: auto;
+        justify-content: space-around;
+        width: 100%;
+        background-color: #ffffff;
         align-items: center;
+        z-index: 111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 5px 0px 10px black;
 
         nav a {
             display: none;
@@ -270,7 +288,7 @@
     /* facilities section */
 
     .section-3 {
-        width: calc(100% - 15%);
+        width: calc(100% - 20%);
         margin: auto;
     }
 
@@ -287,7 +305,7 @@
             line-height: 24px;
             color: #db6260;
             font-weight: 400;
-            margin: 10px;
+            margin: auto;
 
         }
 
@@ -328,25 +346,36 @@
             min-width: 250px;
 
         }
+
+        .contant-1,
+        .contant-2,
+        .contant-3,
+        .contant-4 i {
+            margin-top: 50px;
+            width: calc(100% - 5%);
+            font-size: 30px;
+            text-align: center;
+            line-height: 30px;
+            letter-spacing: 0.5px;
+        }
     }
 
-    .contant-1,
-    .contant-2,
-    .contant-3,
-    .contant-4 {
-        margin-top: 50px;
-        width: calc(100% - 5%);
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+
 }
 
 @media (max-width:425px) {
     .navigation {
         display: flex;
+        margin: auto;
         justify-content: space-between;
-        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
         align-items: center;
+        z-index: 111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 5px 0px 10px black;
 
         nav a {
             display: none;
