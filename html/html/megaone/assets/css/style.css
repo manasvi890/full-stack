@@ -256,10 +256,7 @@ a {
 
     }
 
-    .contant-1,
-    .contant-2,
-    .contant-3,
-    .contant-4 i {
+    .facilities i {
         /* margin-top: 50px; */
         width: calc(100% - 5%);
         font-size: 30px;
@@ -273,10 +270,19 @@ a {
 /* FACILITIES SECTION END */
 
 /* about section start */
+.container-4 {
+    height: 100px;
+    background-color: #db6260;
+    width: 100%;
+}
 
 .container-3 {
-    width: 100%;
-    height: 100px;
+    width: calc(100% - 10%);
+    margin: auto;
+    background-color: #db6260;
+}
+
+.color-about {
     background-color: #db6260;
 }
 
@@ -285,12 +291,28 @@ a {
     background-color: #db6260;
 
     .about-image {
-        padding: 50px;
+        width: calc(100% - 50%);
+        /* padding-right: 50px; */
     }
 
+    .about-image img {
+        object-fit: cover;
+        width: calc(100% - 25%);
+        border: 20px solid white;
+    }
+/* 
+    .box {
+        height: 500px;
+        width: 500px;
+        background-color: #ffffff transparent;
+    } */
+
     .about-contant {
-        padding-top: 150px;
-        margin: 50px;   
+        margin-left: 50px;
+        margin: auto;
+        text-align: center;
+        /* margin-right: 100px; */
+        width: calc(100% - 50%);
 
         h4 {
             font-family: "roboto", serif;
@@ -299,6 +321,10 @@ a {
             line-height: 24px;
             letter-spacing: 0.5px;
             color: #ffffff;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            font-weight: 400;
+            text-wrap: wrap;
         }
 
         p {
@@ -307,7 +333,51 @@ a {
             text-align: justify;
             line-height: 26px;
             letter-spacing: 0.5px;
-           
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-family: "roboto", serif;
+            font-size: calc(4vw + 2px);
+            text-align: left;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+            font-weight: 400;
+            text-wrap: wrap;
+
+        }
+
+        .learn-more {
+            display: block;
+            height: 45px;
+            width: 150px;
+            border-radius: 60px;
+            background-color: #db6260;
+            border: 2px solid white;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .learn-more:hover {
+            display: block;
+            height: 50px;
+            width: 150px;
+            border-radius: 50px;
+            background-color: white;
+            border: 1px solid white;
+            color: #db6260;
+            font-size: 14px;
         }
     }
+}
+
+.contant-1,
+.contant-2,
+.contant-3,
+.contant-4{
+    
+    display: flex !important;
 }
