@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import 'responcive.scss';
+
+body {
+    background-color: white;
+}
+
+.link {
+    color: #151515 !important;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: #151515;
+    opacity: 60.0%;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    background-color: #101010;
+    border-radius: 0;
+
+    .dropdown-divider {
+        background-color: #707070;
+    }
+
+    .dropdown-item {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: left;
+        letter-spacing: 0.4px;
+        font-weight: 600;
+    }
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: 15px;
+}
