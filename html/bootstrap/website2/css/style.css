@@ -5,7 +5,7 @@
     display: none;
   }
 }
-@media (min-width: 50px) and (max-width: 992px) {
+@media (min-width: 50px) and (max-width: 991px) {
   .fa-solid {
     display: none;
   }
@@ -50,4 +50,8 @@ body {
 
 .dropdown-menu[data-bs-popper] {
   margin-top: 15px;
+}
+
+.bg-body-tertiary {
+  background-color: white !important;
 }/*# sourceMappingURL=style.css.map */
