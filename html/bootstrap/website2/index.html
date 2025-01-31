@@ -10,170 +10,167 @@
     <title>Document</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        /* li {
-            color: #151515 !important;
-            opacity: 60.0%;
-            font-size: 12px;
-            line-height: normal;
-            letter-spacing: 0.5px;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        li:hover {
-            li {
-                color: #151515;
-                opacity: 60.0%;
-                font-size: 12px;
-                line-height: normal;
-                letter-spacing: 0.5px;
-                text-align: left;
-                font-weight: 600;
-            }
-        } */
-    </style>
 </head>
 
 <body>
     <!-- Navbar section start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-2 mt-4">
-                <img src="../assets/image/logo.png">
-            </a>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                        <ul class="navbar-nav ms-2 mt-3">
-                            <li class="nav-item dropdown ms-2 px-2">
-                                <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
-                                    HOME
-                                </ul>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Basic</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Clean</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Centered Menu </a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- pages link -->
-                            <li class="nav-item dropdown ms-2 px-2">
-                                <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
-                                    PAGES
-                                </ul>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">About</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Services</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Contact</a></li>
-                                </ul>
-                            </li>
-                            <!-- PORTFOLIO LAYOUTS -->
-                            <li class="nav-item dropdown ms-2 px-2">
-                                <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
-                                    PORTFOLIO LAYOUTS
-                                </ul>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Grid</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Masonry</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#"> Mosaic </a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#"> Loadmore Button </a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#"> Loadmore Auto </a></li>
-                                </ul>
-                            </li>
-                            <!-- PORTFOLIO SINGLES -->
-                            <li class="nav-item dropdown ms-2 px-2">
-                                <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
-                                    PORTFOLIO SINGLE
-                                </ul>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Image</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Slider </a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Video </a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Gallery </a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Before After </a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Mixed Media </a></li>
-                                </ul>
-                            </li>
-                            <!-- BLOG -->
-                            <li class="nav-item dropdown ms-2 px-2">
-                                <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
-                                    BLOG
-                                </ul>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Blog List</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Blog Classic </a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Single Standard</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Single Slider</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Single Video</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Single Full Width</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <i class="fa-solid fa-bars"></i>
-                            </li>
-                        </ul>
+    <div class="container">
+        <nav class="nav1 navbar navbar-expand-lg bg-body-tertiary  bg-white">
+            <div class="container-fluid  bg-white">
+                <a class="navbar-brand mt-4">
+                    <img src="../assets/image/logo.png">
+                </a>
+                <nav class="nav2 navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav ms-1 mt-4">
+                                <li class="nav-item dropdown ms-1 px-1">
+                                    <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
+                                        HOME
+                                    </ul>
+                                    <ul class="dropdown-menu mt-4 dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Basic</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Clean</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Centered Menu </a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- pages link -->
+                                <li class="nav-item dropdown ms-1 px-1">
+                                    <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
+                                        PAGES
+                                    </ul>
+                                    <ul class="dropdown-menu mt-4 dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">About</a>
+                                            <ul class="dropdown-menu mt-4 dropdown-menu-dark">
+                                                <li><a class="dropdown-item" href="#">About Basic</a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">About Extended</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Services</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <!-- PORTFOLIO LAYOUTS -->
+                                <li class="nav-item dropdown ms-1 px-1">
+                                    <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
+                                        PORTFOLIO LAYOUTS
+                                    </ul>
+                                    <ul class="dropdown-menu mt-4 dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Grid</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Masonry</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Mosaic </a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Loadmore Button </a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Loadmore Auto </a></li>
+                                    </ul>
+                                </li>
+                                <!-- PORTFOLIO SINGLES -->
+                                <li class="nav-item dropdown ms-1 px-1">
+                                    <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
+                                        PORTFOLIO SINGLE
+                                    </ul>
+                                    <ul class="dropdown-menu mt-4 dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Image</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Slider </a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Video </a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Gallery </a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Before After </a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Mixed Media </a></li>
+                                    </ul>
+                                </li>
+                                <!-- BLOG -->
+                                <li class="nav-item dropdown-menu-right dropdown-menu-lg-left ms-1 px-1">
+                                    <ul class="link" data-bs-toggle="dropdown" aria-expanded="false">
+                                        BLOG
+                                    </ul>
+                                    <ul class="blog dropdown-menu mt-4 dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Blog List</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Blog Classic </a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Single Standard</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Single Slider</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Single Video</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Single Full Width</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </nav>
+                </nav>
+                <nav class="nav3 navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <li class="nav-item ms-1 px-1">
+                            <i class="fa-solid fa-bars" style="color: #707070;"></i>
+                        </li>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </div>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

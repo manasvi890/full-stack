@@ -1,17 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@media (min-width: 992px) {
-  .fa-solid {
+@media (max-width: 991px) {
+  .nav2 {
     display: none;
   }
 }
-@media (min-width: 50px) and (max-width: 991px) {
-  .fa-solid {
+@media (min-width: 992px) {
+  .nav3 {
     display: none;
+  }
+  .link {
+    color: #151515 !important;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .link:hover {
+    color: #151515;
+    opacity: 60%;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .dropdown-menu {
+    background-color: #101010;
+    border-radius: 0;
+  }
+  .dropdown-menu .dropdown-divider {
+    background-color: #707070;
+  }
+  .dropdown-menu .dropdown-item {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .dropdown-menu .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #ffffff !important;
   }
 }
 body {
-  background-color: white;
+  font-family: "roboto", serif;
+}
+
+.bg-body-tertiary {
+  background-color: white !important;
 }
 
 .link {
@@ -33,14 +72,14 @@ body {
   font-weight: 500;
 }
 
-.dropdown-menu {
+.nav-item:hover .dropdown-menu {
   background-color: #101010;
   border-radius: 0;
 }
-.dropdown-menu .dropdown-divider {
+.nav-item:hover .dropdown-menu .dropdown-divider {
   background-color: #707070;
 }
-.dropdown-menu .dropdown-item {
+.nav-item:hover .dropdown-menu .dropdown-item {
   font-size: 13px;
   line-height: 18px;
   text-align: left;
@@ -48,10 +87,13 @@ body {
   font-weight: 600;
 }
 
-.dropdown-menu[data-bs-popper] {
-  margin-top: 15px;
+.hover-item:hover {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: 0.4px;
+  font-weight: 600;
 }
-
-.bg-body-tertiary {
-  background-color: white !important;
+.hover-item:hover .dropdown-divider {
+  background-color: #707070;
 }/*# sourceMappingURL=style.css.map */

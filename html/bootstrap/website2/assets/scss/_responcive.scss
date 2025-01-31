@@ -1,13 +1,52 @@
-@media (min-width: 992px) {
-    .fa-solid {
+@media (max-width: 991px) {
+    .nav2 {
         display: none;
     }
 }
 
-// Example
-// Apply styles starting from medium devices and up to extra large devices
-@media (min-width: 50px) and (max-width: 991px) {
-    .fa-solid {
+@media (min-width: 992px) {
+    .nav3 {
         display: none;
+    }
+
+    .link {
+        color: #151515 !important;
+        font-size: 12px;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .link:hover {
+        color: #151515;
+        opacity: 60.0%;
+        font-size: 12px;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .dropdown-menu {
+        background-color: #101010;
+        border-radius: 0;
+
+        .dropdown-divider {
+            background-color: #707070;
+        }
+
+        .dropdown-item {
+            font-size: 13px;
+            line-height: 18px;
+            text-align: left;
+            letter-spacing: 0.4px;
+            font-weight: 600;
+        }
+
+        .bg-body-tertiary {
+            --bs-bg-opacity: 1;
+            background-color: #ffffff !important;
+        }
     }
 }

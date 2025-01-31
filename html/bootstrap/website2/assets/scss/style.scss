@@ -2,11 +2,15 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+// @import 'style.scss';
 @import 'responcive.scss';
 
 body {
-    background-color: white;
+    font-family: "roboto", serif;
+}
+
+.bg-body-tertiary {
+    background-color: white !important;
 }
 
 .link {
@@ -26,29 +30,42 @@ body {
     letter-spacing: 0.5px;
     text-align: left;
     font-weight: 500;
+
+
 }
 
-.dropdown-menu {
-    background-color: #101010;
-    border-radius: 0;
+.nav-item:hover {
+    .dropdown-menu {
+        background-color: #101010;
+        border-radius: 0;
+
+        .dropdown-divider {
+            background-color: #707070;
+        }
+
+        .dropdown-item {
+            font-size: 13px;
+            line-height: 18px;
+            text-align: left;
+            letter-spacing: 0.4px;
+            font-weight: 600;
+        }
+    }
+}
+
+.hover-item:hover {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    font-weight: 600;
 
     .dropdown-divider {
         background-color: #707070;
     }
 
-    .dropdown-item {
-        font-size: 13px;
-        line-height: 18px;
-        text-align: left;
-        letter-spacing: 0.4px;
-        font-weight: 600;
-    }
 }
 
-.dropdown-menu[data-bs-popper] {
-    margin-top: 15px;
-}
-
-.bg-body-tertiary {
-    background-color: white !important;
-}
+// .blog {
+//     margin-right: 500px;
+// }
