@@ -521,9 +521,6 @@
   }
 }
 @layer utilities {
-  .\@container {
-    container-type: inline-size;
-  }
   .collapse {
     visibility: collapse;
   }
@@ -548,44 +545,17 @@
       max-width: 96rem;
     }
   }
-  .m-8 {
-    margin: calc(var(--spacing) * 8);
-  }
-  .my-8 {
-    margin-block: calc(var(--spacing) * 8);
-  }
-  .ms-5 {
-    margin-inline-start: calc(var(--spacing) * 5);
-  }
-  .ms-8 {
-    margin-inline-start: calc(var(--spacing) * 8);
-  }
-  .ms-10 {
-    margin-inline-start: calc(var(--spacing) * 10);
-  }
-  .ms-20 {
-    margin-inline-start: calc(var(--spacing) * 20);
-  }
-  .ml-10 {
-    margin-left: calc(var(--spacing) * 10);
-  }
-  .ml-20 {
-    margin-left: calc(var(--spacing) * 20);
-  }
-  .ml-50 {
-    margin-left: calc(var(--spacing) * 50);
-  }
-  .ml-100 {
-    margin-left: calc(var(--spacing) * 100);
-  }
-  .ml-1000 {
-    margin-left: calc(var(--spacing) * 1000);
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
   }
   .block {
     display: block;
   }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .inline-flex {
     display: inline-flex;
@@ -596,8 +566,16 @@
   .table {
     display: table;
   }
-  .w-24 {
-    width: calc(var(--spacing) * 24);
+  .size-50 {
+    width: calc(var(--spacing) * 50);
+    height: calc(var(--spacing) * 50);
+  }
+  .size-130 {
+    width: calc(var(--spacing) * 130);
+    height: calc(var(--spacing) * 130);
+  }
+  .w-full {
+    width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -611,17 +589,20 @@
   .items-center {
     align-items: center;
   }
-  .justify-around {
-    justify-content: space-around;
-  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -639,24 +620,41 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-7 {
-    padding-inline: calc(var(--spacing) * 7);
+  .ps-50 {
+    padding-inline-start: calc(var(--spacing) * 50);
   }
-  .px-10 {
-    padding-inline: calc(var(--spacing) * 10);
+  .ps-100 {
+    padding-inline-start: calc(var(--spacing) * 100);
   }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
   }
-  .font-mono {
-    font-family: var(--font-mono);
+  .pt-30 {
+    padding-top: calc(var(--spacing) * 30);
   }
-  .font-serif {
-    font-family: var(--font-serif);
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .leading-2 {
+    --tw-leading: calc(var(--spacing) * 2);
+    line-height: calc(var(--spacing) * 2);
+  }
+  .leading-2\.5 {
+    --tw-leading: calc(var(--spacing) * 2.5);
+    line-height: calc(var(--spacing) * 2.5);
+  }
+  .text-wrap {
+    text-wrap: wrap;
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
   }
   .text-white {
     color: var(--color-white);
@@ -668,16 +666,32 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .sm\:hidden {
-    @media (width >= 40rem) {
+  .lg\:hidden {
+    @media (width >= 64rem) {
       display: none;
     }
   }
-  .\@7xl\:flex {
-    @container (width >= 80rem) {
-      display: flex;
-    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@media (max-width:640px) {
+  .media {
+    display: none;
   }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.container {
+  width: calc(100% - 20%);
+  margin: auto;
+}
+.heading {
+  font-family: "Rochester", serif;
+}
+.pizza {
+  object-fit: cover;
 }
 @keyframes spin {
   to {
@@ -734,6 +748,10 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";

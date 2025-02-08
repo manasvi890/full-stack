@@ -1,3 +1,27 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 
-
+@media(max-width:640px){
+    .media{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.font{
+    /* font-family: "roboto",serif; */
+    /* font-size: 16px; */
+}
+.container{
+    width: calc(100% - 20%);
+    margin: auto;
+}
+.heading{
+    font-family: "Rochester", serif;
+}
+.pizza{
+    object-fit: cover;
+}
