@@ -6,10 +6,6 @@
     .media{
         display: none;
     }
-    .logo{
-        display: flex;
-        justify-content: space-between;
-    }
 }
 .font{
     /* font-family: "roboto",serif; */
@@ -22,6 +18,14 @@
 .heading{
     font-family: "Rochester", serif;
 }
-.pizza{
-    object-fit: cover;
+.image-crop{ width: 300px; height: 337px; object-fit: cover; object-position: -20% 0;
+display: flex;
+justify-content: end;}
+ 
+
+
+@media(max-width:990px){
+    .logo{
+        display:none;
+    }
 }
