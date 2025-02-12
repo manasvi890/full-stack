@@ -18,10 +18,25 @@
 .heading{
     font-family: "Rochester", serif;
 }
-.image-crop{ width: 300px; height: 337px; object-fit: cover; object-position: -20% 0;
+/* .image-crop{ width: 300px; height: 337px; object-fit: cover; object-position: -20% 0;
 display: flex;
-justify-content: end;}
- 
+justify-content: end;
+height: 300px;
+width: 300px;
+overflow: hidden;
+} */
+ .heading{
+    font-family: "Rochester", serif;
+    font-size: 48px;
+    font-weight: 800;
+ }
+ .plate{
+    /* transform: rotate(20deg); */
+    transition: width 2s, height 2s, transform 2s;
+ }
+ .plate:hover{
+    transform: rotate(5deg);
+ }
 
 
 @media(max-width:990px){
