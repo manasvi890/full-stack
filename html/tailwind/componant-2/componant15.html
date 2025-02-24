@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-6">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold">Customers <span class="bg-blue-100 text-blue-700 text-sm px-2 py-1 rounded-lg">240 vendors</span></h2>
+            <div class="space-x-2">
+                <button class="px-4 py-2 text-gray-600 border rounded-lg">Import</button>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg">Add vendor</button>
+            </div>
+        </div>
+
+        <p class="text-gray-600 mb-4">These companies have purchased in the last 12 months.</p>
+
+        <div class="flex space-x-4 mb-4">
+            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg">View all</button>
+            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg">Monitored</button>
+            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg">Unmonitored</button>
+        </div>
+
+        <div class="relative mb-4">
+            <input type="text" placeholder="Search" class="w-full px-4 py-2 border rounded-lg">
+        </div>
+
+        <div class="overflow-hidden border rounded-lg">
+            <table class="min-w-full bg-white">
+                <thead class="bg-gray-200">
+                    <tr>
+                        <th class="py-3 px-6 text-left">Company</th>
+                        <th class="py-3 px-6 text-left">Status</th>
+                        <th class="py-3 px-6 text-left">About</th>
+                        <th class="py-3 px-6 text-left">Users</th>
+                        <th class="py-3 px-6 text-left">License use</th>
+                        <th class="py-3 px-6 text-left"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t">
+                        <td class="py-3 px-6">
+                            <span class="font-semibold">Catalog</span>
+                            <br>
+                            <span class="text-gray-500 text-sm">catalogapp.io</span>
+                        </td>
+                        <td class="py-3 px-6"><span class="bg-green-100 text-green-700 px-2 py-1 rounded-lg text-sm">Customer</span></td>
+                        <td class="py-3 px-6">Content curating app<br><span class="text-gray-500 text-sm">Brings all your news into one place</span></td>
+                        <td class="py-3 px-6 flex items-center space-x-2">
+                            <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full">
+                            <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full">
+                            <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full">
+                            <span class="text-gray-500 text-sm">+4</span>
+                        </td>
+                        <td class="py-3 px-6">
+                            <div class="w-32 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-blue-600 rounded-full w-3/5"></div>
+                            </div>
+                        </td>
+                        <td class="py-3 px-6 text-right">...</td>
+                    </tr>
+
+                    <tr class="border-t">
+                        <td class="py-3 px-6">
+                            <span class="font-semibold">Circooles</span>
+                            <br>
+                            <span class="text-gray-500 text-sm">getcircooles.com</span>
+                        </td>
+                        <td class="py-3 px-6"><span class="bg-gray-100 text-gray-700 px-2 py-1 rounded-lg text-sm">Churned</span></td>
+                        <td class="py-3 px-6">Design software<br><span class="text-gray-500 text-sm">Super lightweight design app</span></td>
+                        <td class="py-3 px-6 flex items-center space-x-2">
+                            <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full">
+                            <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full">
+                            <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full">
+                            <span class="text-gray-500 text-sm">+4</span>
+                        </td>
+                        <td class="py-3 px-6">
+                            <div class="w-32 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-blue-600 rounded-full w-2/5"></div>
+                            </div>
+                        </td>
+                        <td class="py-3 px-6 text-right">...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="flex justify-between items-center mt-4">
+            <span class="text-gray-600">Page 1 of 10</span>
+            <div class="flex space-x-2">
+                <button class="px-4 py-2 border rounded-lg hover:bg-gray-200 text-gray-600">← Previous</button>
+                <button class="px-4 py-2 border rounded-lg hover:bg-gray-200 text-gray-700">Next →</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

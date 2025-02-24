@@ -1,0 +1,25 @@
+@media(max-width:650px){
+    .media{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.plate{
+    /* transform: rotate(20deg); */
+    transition: width 2s, height 2s, transform 2s;
+ }
+ .plate:hover{
+    transform: rotate(5deg);
+ }
+ .heading{
+    font-family: "Rochester", serif;
+    font-size: 48px;
+    font-weight: 800;
+ }
+ .container{
+    max-width: calc(100%-20%);
+    margin: auto;
+ }
