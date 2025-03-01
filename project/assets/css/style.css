@@ -1,0 +1,44 @@
+.nav-img{
+    background-image: url('../images/asset\ 2.jpeg');
+   max-width: auto;
+}
+.navbar{
+    display: flex;
+}
+@media(max-width:930px)
+{
+    .nav-links{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+    }
+    .nav-icon{
+       display: none;
+    }
+    .collection,.categories{
+        flex-wrap: wrap;
+       p{
+        font-size: 15px;
+       }
+       h1{
+        font-size: 15px;
+        text-wrap: wrap;
+       }
+       h4{
+        font-size: 15px;
+       }
+    }
+.content{
+    display: block;
+    text-align:center;
+    p{
+        padding-top: 10px;
+    }
+}
+.section4-image{
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 10px;
+}
+}
