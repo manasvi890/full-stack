@@ -5,6 +5,17 @@
 .navbar{
     display: flex;
 }
+.signature:hover{
+  
+    border-left: 1px solid black;
+    border-right: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+    
+
+
 @media(max-width:930px)
 {
     .nav-links{
@@ -39,6 +50,12 @@
 .section4-image{
     flex-wrap: wrap;
     margin: auto;
+    padding-top: 10px;
+}
+
+.block_image{
+    width: 100%;
+    height: auto;
     padding-top: 10px;
 }
 }

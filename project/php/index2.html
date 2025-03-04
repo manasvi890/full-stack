@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Box Design</title>
+    <title>Watch Collection</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black">
-
-    <!-- Container -->
-    <div class="relative w-full min-h-screen flex justify-start items-start">
-        <!-- Image -->
-        <div class="absolute top-0 left-0 p-10">
-            <img src="../assets/images/asset 11.jpeg" alt="Watch in Box" class="w-64 shadow-lg">
+<body class="bg-black text-white" style="background-image: url('../assets/images/asset\ 41.jpeg');">
+    <div class="container mx-auto py-10 text-center">
+        <p class="text-sm tracking-wide text-gray-400">EXCLUSIVE PRODUCTS</p>
+        <h1 class="text-4xl font-light tracking-widest text-yellow-500 mt-2">NEW TECHNOLOGY</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 px-4">
+            <!-- Watch 1 -->
+            <div class="bg-white p-6 rounded-lg text-black text-center">
+                <img src="watch1.jpg" alt="White Dial Golden Strip" class="w-full rounded-lg">
+                <p class="mt-3 font-medium">White Dial Golden Strip</p>
+                <p class="text-gray-600">Rs. 2,950.00</p>
+            </div>
+            <!-- Watch 2 -->
+            <div class="bg-white p-6 rounded-lg text-black text-center">
+                <img src="watch2.jpg" alt="Black Dial Watch" class="w-full rounded-lg">
+                <p class="mt-3 font-medium">Black Dial Watch</p>
+                <p class="text-gray-600">Rs. 5,450.00</p>
+            </div>
+            <!-- Watch 3 -->
+            <div class="bg-white p-6 rounded-lg text-black text-center">
+                <img src="watch3.jpg" alt="Classic Brown Strip" class="w-full rounded-lg">
+                <p class="mt-3 font-medium">Classic Brown Strip</p>
+                <p class="text-gray-600">Rs. 1,900.00</p>
+            </div>
         </div>
-
-        <!-- Dark Section at Bottom -->
-        <div class="absolute bottom-0 w-full h-1/2 bg-black"></div>
     </div>
-
+    
+    <!-- Floating Button -->
+    <button class="fixed bottom-5 right-5 bg-yellow-300 p-3 rounded-lg shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m9 3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+    </button>
 </body>
 </html>
 
