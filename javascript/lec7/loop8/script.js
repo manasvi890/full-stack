@@ -1,10 +1,17 @@
-// 6-> Write a program that calculates the sum of all elements in an array.
+// 8-> Write a program that counts the number of vowels in a given string.
 
-let sum=0;
-let arr=[10,20,30] ; length ;
+let vowels=["a" , "A" , "e" , "E" , "i" , "I" , "o" , "O" , "u" , "U"]
+let count = 0;
+let str=prompt("enter string:")
+console.log(str);
 
-for(let i=0 ; i< arr.length ; i++)
 {
-    sum+=arr[i];
+    for(let i of str)
+    {
+        if(vowels)
+        {
+            count++;
+        }
+    }
 }
-console.log("sum of array=",+sum);
+console.log(count);
