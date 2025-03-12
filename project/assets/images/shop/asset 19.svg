@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 8.5" style="enable-background:new 0 0 7 8.5;" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="icon-cart" y="0" width="7" height="8.5"/>
+	</defs>
+	<clipPath id="icon-cart-2">
+		<use xlink:href="#icon-cart" style="overflow:visible;"/>
+	</clipPath>
+	<path class="icon-cart" d="M3.1,0C2.5,0,2,0.5,2,1.1v0.7H0.8c0,0,0,0,0,0C0.6,1.8,0.5,1.9,0.5,2L0,8.1c0,0.1,0.1,0.4,0.3,0.4c0,0,0,0,0,0&#10;&#9;&#9;h6.4C7,8.5,7,8.2,7,8.1c0,0,0,0,0,0L6.5,2c0-0.1-0.1-0.2-0.3-0.2H5.1V1.1C5.1,0.5,4.6,0,3.9,0H3.1z M3.1,0.5h0.9&#10;&#9;&#9;c0.3,0,0.6,0.3,0.6,0.6v0.7H2.5V1.1C2.5,0.8,2.7,0.5,3.1,0.5 M1,2.3H2v0.8c0,0.1,0.1,0.3,0.3,0.3c0.1,0,0.3-0.1,0.3-0.3V2.3h2.1&#10;&#9;&#9;v0.8c0,0.1,0.1,0.3,0.3,0.3c0.1,0,0.3-0.1,0.3-0.3V2.3H6l0.5,5.3c0,0.2-0.1,0.3-0.3,0.3H0.9c-0.2,0-0.3-0.1-0.3-0.3L1,2.3z"/>
+</g>
+</svg>
