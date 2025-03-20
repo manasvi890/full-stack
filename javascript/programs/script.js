@@ -48,3 +48,101 @@ let c = (45)
 console.log("Fahrenheit:",(c*9/5)+32);
 
 // 9->Javascript Program to Generate a Random Number
+
+// 10->Javascript Program to Check if a number is Positive, Negative, or Zero
+
+{let num=(-967)
+{
+    if(num>0)
+    {
+        console.log(`${num} is a positive number`); 
+    }
+    else if(num<0)
+    {
+        console.log(`${num} is a negative number`); 
+    }
+    else{
+        console.log("zero");   
+    }
+}}
+
+// 11->Javascript Program to Check if a Number is Odd or Even
+
+{let num=(49)
+if(num%2==0){
+    console.log(`${num} : even number`);
+}
+else if(num%2!=0){
+    console.log(`${num} : odd number`);
+}}
+
+// 12->JavaScript Program to Find the Largest Among Three Numbers
+
+{
+    let num1=(45)
+    let num2=(95)
+    let num3=(25)
+    let largest
+    if(num1>=num2 && num1>=num3)
+    {
+        largest=num1 
+    }
+    else if(num2>=num1 && num2>=num3)
+    {
+        largest=num2
+    }
+    else{
+        largest=num3
+    }
+    console.log("largest number is:",largest);
+    
+}
+
+// 13->JavaScript Program to Check Prime Number
+
+{
+let n = 60;
+let isPrime = true;
+
+if (n <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+}
+
+console.log(isPrime ? `${n} is a prime number.` : `${n} is not a prime number.`);
+}
+
+// 14->JavaScript Program to Print All Prime Numbers in an Interval
+
+// {
+//     let num1,num2
+//     let startnum=2
+//     let endnum=100
+//     let prime=1
+//     for(let i=startnum ; i<=endnum ; i++)
+//     {
+//         if(i==1 || i==0)
+//             continue;
+  
+//         {
+//             for(let j=2 ; j<=i/2 ; j++)
+//             {
+//                 if(i%j==0)
+//                 {
+//                   prime=0
+//                   break;
+//                 }
+//             }
+//         }
+//         if(prime==1)
+//         {
+//             console.log(i);
+//         }
+//     }
+// }
