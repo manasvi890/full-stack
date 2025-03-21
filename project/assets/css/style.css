@@ -58,4 +58,18 @@
     height: auto;
     padding-top: 10px;
 }
+.blog{
+    display: block;
+}
+.footer,.reviews{
+    display: none;
+}
+.new_technology{
+  p{
+    font-size: 15px;
+  }
+  h1,h2,h3{
+    font-size: 20px;
+  }
+}
 }
