@@ -1,25 +1,41 @@
-<div class="min-h-20 w-full"></div>
-<div class="max-w-7xl m-auto">
-    <p class="text-[#7a6256] tracking-widest">OUR STORIES</p>
-    <h2 class="text-6xl font-thin tracking-widest text-gray-900 mt-4">OUR BLOG</h2>
-    <button class="border px-4 py-2 mt-5 tracking-widest hover:bg-[#2c2323] text-[#7a6256] duration-700 font-semibold">VIEW ALL -></button>
-    
-    <div class="flex mt-20 gap-10">
-        <div>
-            <img src="../assets/images/asset 26.jpeg">
-            <p class="pt-10 text-[#7a6256] text-lg tracking-widest">MAY 30 , 2022</p>
-            <p class="pt-10 text-2xl font-light tracking-widest text-[#7a6256]">HOW TO BUILD WATCHES BY MACHINE</p>
-            <p class="pt-5 text-[#7a6256] text-lg font-normal tracking-widest">Lorem ipsum dolor sit amet consectetur adipisicing elit.... </p>
-        </div>
-        <div>
-            <img src="../assets/images/asset 27.jpeg">
-            <p class="pt-10 text-[#7a6256] text-lg tracking-widest">MAY 30 , 2022</p>
-            <p class="pt-10 text-2xl font-light tracking-widest text-[#7a6256]">HOW TO BUILD WATCHES BY MACHINE</p>
-            <p class="pt-5 text-[#7a6256] text-lg font-normal tracking-widest">Lorem ipsum dolor sit amet consectetur adipisicing elit.... </p>
-        </div>
-        <div>
-            <img src="../assets/images/asset 28.jpeg" class="transform hover:rotate-45 duration-700">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
+    <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-4">
+            <!-- First Image -->
+            <div>
+                <img src="../assets/images/grid04_1137ddd0-a47e-41d8-a3ca-3f48f9d408e5.webp" alt="Wristwatch on hand" class="w-full rounded-lg shadow-lg">
+            </div>
+            <!-- Second Image -->
+            <div>
+                <img src="../assets/images/grid05_2560aefc-5f3d-4ba6-83bd-e511c04bb63c.webp" alt="Wristwatch with outfit" class="w-full rounded-lg shadow-lg">
+            </div>
+            <!-- Third Image -->
+            <div class="md:col-span-2">
+                <img src="../assets/images/grid06_40494a5d-64dc-41dd-80d3-7bc8f9888a6f.webp" alt="Watch repair close-up" class="w-full rounded-lg shadow-lg">
+            </div>
         </div>
+
+        <!-- Floating Watch Icon Button -->
+        <div class="fixed bottom-6 right-6">
+            <button class="bg-yellow-400 p-3 rounded-lg shadow-lg hover:bg-yellow-500 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
+                    <circle cx="12" cy="12" r="10"></circle> 
+                    <path d="M12 6v6l4 2"></path> 
+                </svg>
+            </button>
+        </div>
+
     </div>
-</div>
+
+</body>
+</html>
+
