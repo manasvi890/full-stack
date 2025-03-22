@@ -120,29 +120,42 @@ console.log(isPrime ? `${n} is a prime number.` : `${n} is not a prime number.`)
 
 // 14->JavaScript Program to Print All Prime Numbers in an Interval
 
-// {
-//     let num1,num2
-//     let startnum=2
-//     let endnum=100
-//     let prime=1
-//     for(let i=startnum ; i<=endnum ; i++)
-//     {
-//         if(i==1 || i==0)
-//             continue;
-  
-//         {
-//             for(let j=2 ; j<=i/2 ; j++)
-//             {
-//                 if(i%j==0)
-//                 {
-//                   prime=0
-//                   break;
-//                 }
-//             }
-//         }
-//         if(prime==1)
-//         {
-//             console.log(i);
-//         }
-//     }
-// }
+{let start=2
+let end=100
+let prime
+for(let i=start ; i<=end ; i++)
+{
+    if(i==1 || i==0)
+        continue;
+
+prime=1
+    {
+        for(let j=2 ; j<=i/2 ; j++)
+        {
+if(i%j==0)
+{
+    prime=0
+    break;
+}
+        }
+        if(prime==1)
+            {
+                console.log(i);
+                
+            }
+    }
+
+}
+}
+
+// 15->JavaScript Program to Find the Factorial of a Number
+
+{
+let number=5
+let fact = 1;
+for (i = 1; i <= number; i++) {
+    fact *= i;
+}
+console.log(`The factorial of ${number} is ${fact}.`);}
+
+// 16->
