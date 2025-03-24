@@ -158,4 +158,109 @@ for (i = 1; i <= number; i++) {
 }
 console.log(`The factorial of ${number} is ${fact}.`);}
 
-// 16->
+// 16->JavaScript Program to Display the Multiplication Table
+
+{
+    console.log("multiplication table");
+    
+        for(i=0 ; i<=10 ; i++)
+        {
+           console.log(`     5 * ${i} = ${i * 5}`);
+        }
+  
+
+}
+
+// 17->JavaScript Program to Print the Fibonacci Sequence
+
+let n=(10)
+let a=0 ; b=1 
+let next
+console.log("fibbonacci sequence");
+
+for(i=0 ; i<=n ;i++)
+{
+    console.log("     ",a);
+    next = a+b;
+    a=b;
+    b=next;
+    
+}
+
+// 18->JavaScript Program to Check Armstrong Number
+
+{let e, x, d = 0;
+let b =(153);
+x=b;
+
+while (x > 0) {
+  e = x % 10;
+  x = parseInt(x/10);
+  d = d + (e*e*e);
+}
+
+if (b==d)
+   console.log("given number is an armstrong number");
+else
+   console.log ("given number is not an armstrong number");;
+  }
+
+//19->JavaScript Program to Find Armstrong Number in an Interval
+
+//20->JavaScript Program to Make a Simple Calculator
+
+// let number1=prompt("867")
+// let sign=prompt("enter sign")
+// let number2=prompt("enter number2")
+// let result
+// if(sign == '+' )
+// {
+//     result= number1 + number2
+// }
+// else if(sign =='-' )
+//     {
+//         result= number1 - number2
+//     }
+//    else if(sign == '*' )
+//         {
+//             result= number1 * number2
+//         }
+//         else
+//             {
+//                 result= number1 / number2
+//             }
+
+//             console.log(`${number1} ${sign} ${number2} = ${result}`);
+            
+// 21->JavaScript Program to Find the Sum of Natural Numbers
+
+{
+    let sum=0
+    let number=(5)
+    for(let i=0 ; i<=number ; i++)
+    {
+        sum+=i;
+    }
+    console.log(sum);
+    
+}
+
+// 22->JavaScript Program to Check if the Numbers Have Same Last Digit
+
+{
+    let num1=(678)
+    let num2=(788)
+    let num3=(768)
+
+    let result1= num1 % 10;
+    let result2= num2 % 10;
+    let result3= num3 % 10;
+
+    if(result1 == result2 && result2 == result3)
+    {
+        console.log("last digit is same");
+    }
+    else{
+        console.log("last digit is not same");    
+    }
+}
