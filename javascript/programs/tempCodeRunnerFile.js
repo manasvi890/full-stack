@@ -1,4 +1,4 @@
-// // 1->Javascript program to print hello world
+// 1->Javascript program to print hello world
 
 // {console.log("Hello World!!!");}
 
@@ -312,16 +312,3 @@
 //         }
 //     }
 // }
-
-// 26->JavaScript Program to Find Sum of Natural Numbers Using Recursion
-
-{
-    let num=(10)
-    let sum
-    for(let i=0 ; i<=num ; i++)
-    {
-        sum=num+=i
-    }
-    console.log(sum);
-    
-}
