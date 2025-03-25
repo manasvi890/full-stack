@@ -209,9 +209,9 @@ else
 
 //20->JavaScript Program to Make a Simple Calculator
 
-// let number1=prompt("867")
-// let sign=prompt("enter sign")
-// let number2=prompt("enter number2")
+// let number1=prompt("enter number1")
+// let sign=parseInt(prompt("enter sign"))
+// let number2=parseInt(prompt("enter number2"))
 // let result
 // if(sign == '+' )
 // {
@@ -264,3 +264,63 @@ else
         console.log("last digit is not same");    
     }
 }
+
+// 23->JavaScript Program to Find HCF or GCD
+
+{
+    let hcf
+    let number1=(10)
+    let number2=(5)
+    for(let i=1 ; i<=number1 && i<=number2 ; i++)
+    {
+        if(number1 % i==0 && number2 % i==0)
+        {
+            hcf=i;
+        }
+    }
+    console.log(hcf);
+    
+}
+
+// 24->JavaScript Program to Find LCM
+
+// LCM = (num1*num2) / HCF
+{
+    let num1=(567)
+    let num2=(569)
+for(let i=0 ; i<=num1 && i<=num2 ; i++)
+{
+    if(num1 % i == 0 && num2 % i == 0)
+    {
+        hcf=i;
+    }
+}
+let lcm=(num1 * num2)/hcf
+console.log(lcm);
+}
+
+// 25->JavaScript Program to Find the Factors of a Number
+
+{
+    let num=(12)
+    for(let i=0 ; i <=num ; i++)
+    {
+        if(num % i == 0)
+        {
+            console.log(i);
+            
+        }
+    }
+}
+
+// 26->JavaScript Program to Find Sum of Natural Numbers Using Recursion
+
+{
+    let num
+    let n=10
+    for(let i=0 ; i<=n ; i++)
+    {
+       let 
+    }
+}
+
